@@ -1,4 +1,4 @@
-﻿namespace Doctor_sAppointmentBookingSystem.View
+﻿namespace Doctor_sAppointmentBookingSystem.View.AdminView
 {
     partial class Admin
     {

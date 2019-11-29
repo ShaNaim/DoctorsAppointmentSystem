@@ -17,7 +17,7 @@ namespace Doctor_sAppointmentBookingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DoctorHome());
+            Application.Run(new Login());
         }
     }
 }

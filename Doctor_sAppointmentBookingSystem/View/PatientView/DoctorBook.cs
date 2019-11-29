@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Doctor_sAppointmentBookingSystem.View
+namespace Doctor_sAppointmentBookingSystem.View.PatientView
+
 {
     public partial class DoctorBook : Form
     {

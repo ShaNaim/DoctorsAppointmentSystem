@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Doctor_sAppointmentBookingSystem.View.AdminView;
+using Doctor_sAppointmentBookingSystem.View.PatientView;
+using Doctor_sAppointmentBookingSystem.View.DoctorView;
 
 namespace Doctor_sAppointmentBookingSystem.View
 {
@@ -19,8 +22,22 @@ namespace Doctor_sAppointmentBookingSystem.View
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            new Admin().Show();
-            this.Hide();
+            if(txtUsername.Text == "Admin")
+            {
+                new Admin().Show();
+                this.Hide();
+            }
+            else if(txtUsername.Text == "Doctor")
+            {
+                new DoctorHome().Show();
+                this.Hide();
+            }
+            else if(txtUsername.Text == "Patient")
+            {
+                new PatientHome().Show();
+                this.Hide();
+            }
+            
         }
 
         private void lblSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

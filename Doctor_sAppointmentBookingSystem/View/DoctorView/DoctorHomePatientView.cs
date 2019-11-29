@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Doctor_sAppointmentBookingSystem.View
+namespace Doctor_sAppointmentBookingSystem.View.DoctorView
 {
-    public partial class PatientInfo : Form
+    public partial class DoctorHomePatientView : Form
     {
-        public PatientInfo()
+        public DoctorHomePatientView()
         {
             InitializeComponent();
-        }
-
-        private void btnPatientLoad_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnPatientSearch_Click(object sender, EventArgs e)
@@ -27,12 +22,7 @@ namespace Doctor_sAppointmentBookingSystem.View
 
         }
 
-        private void btnPatientDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPatientAdd_Click(object sender, EventArgs e)
+        private void btnPatientLoad_Click(object sender, EventArgs e)
         {
 
         }

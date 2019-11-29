@@ -1,4 +1,4 @@
-﻿namespace Doctor_sAppointmentBookingSystem.View
+﻿namespace Doctor_sAppointmentBookingSystem.View.DoctorView
 {
     partial class DoctorsView2
     {
@@ -35,17 +35,17 @@
             this.lblDuration = new System.Windows.Forms.Label();
             this.cbDuration = new System.Windows.Forms.ComboBox();
             this.btnAddtoPreacribtion = new System.Windows.Forms.Button();
+            this.cdDuration = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbtnAfter = new System.Windows.Forms.RadioButton();
+            this.rbtnBefore = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.cdDuration = new System.Windows.Forms.ComboBox();
             this.txtPrescription = new System.Windows.Forms.RichTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbtnBefore = new System.Windows.Forms.RadioButton();
-            this.rbtnAfter = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel11.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel11
@@ -159,40 +159,6 @@
             this.btnAddtoPreacribtion.Text = "Confirm";
             this.btnAddtoPreacribtion.UseVisualStyleBackColor = false;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(292, 484);
-            this.tableLayoutPanel1.TabIndex = 4;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.PowderBlue;
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Controls.Add(this.txtPrescription, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 250);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(292, 234);
-            this.tableLayoutPanel2.TabIndex = 4;
-            // 
             // cdDuration
             // 
             this.cdDuration.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -210,17 +176,6 @@
             this.cdDuration.Size = new System.Drawing.Size(180, 32);
             this.cdDuration.TabIndex = 10;
             // 
-            // txtPrescription
-            // 
-            this.txtPrescription.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPrescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPrescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrescription.Location = new System.Drawing.Point(32, 3);
-            this.txtPrescription.Name = "txtPrescription";
-            this.txtPrescription.Size = new System.Drawing.Size(227, 204);
-            this.txtPrescription.TabIndex = 0;
-            this.txtPrescription.Text = "";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rbtnAfter);
@@ -231,17 +186,6 @@
             this.groupBox1.Size = new System.Drawing.Size(180, 34);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            // 
-            // rbtnBefore
-            // 
-            this.rbtnBefore.AutoSize = true;
-            this.rbtnBefore.Location = new System.Drawing.Point(7, 7);
-            this.rbtnBefore.Name = "rbtnBefore";
-            this.rbtnBefore.Size = new System.Drawing.Size(56, 17);
-            this.rbtnBefore.TabIndex = 0;
-            this.rbtnBefore.TabStop = true;
-            this.rbtnBefore.Text = "Before";
-            this.rbtnBefore.UseVisualStyleBackColor = true;
             // 
             // rbtnAfter
             // 
@@ -254,6 +198,62 @@
             this.rbtnAfter.Text = "After";
             this.rbtnAfter.UseVisualStyleBackColor = true;
             // 
+            // rbtnBefore
+            // 
+            this.rbtnBefore.AutoSize = true;
+            this.rbtnBefore.Location = new System.Drawing.Point(7, 7);
+            this.rbtnBefore.Name = "rbtnBefore";
+            this.rbtnBefore.Size = new System.Drawing.Size(56, 17);
+            this.rbtnBefore.TabIndex = 0;
+            this.rbtnBefore.TabStop = true;
+            this.rbtnBefore.Text = "Before";
+            this.rbtnBefore.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(292, 484);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.Controls.Add(this.txtPrescription, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 250);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(292, 234);
+            this.tableLayoutPanel2.TabIndex = 4;
+            // 
+            // txtPrescription
+            // 
+            this.txtPrescription.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPrescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPrescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrescription.Location = new System.Drawing.Point(32, 3);
+            this.txtPrescription.Name = "txtPrescription";
+            this.txtPrescription.Size = new System.Drawing.Size(227, 204);
+            this.txtPrescription.TabIndex = 0;
+            this.txtPrescription.Text = "";
+            // 
             // DoctorsView2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,10 +265,10 @@
             this.Text = "DoctorsView2";
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

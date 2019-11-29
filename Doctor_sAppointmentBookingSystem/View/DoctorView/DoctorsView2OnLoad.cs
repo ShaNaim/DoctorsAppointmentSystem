@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Doctor_sAppointmentBookingSystem.View
+namespace Doctor_sAppointmentBookingSystem.View.DoctorView
 {
-    public partial class PatientHomeView : Form
+    public partial class DoctorsView2OnLoad : Form
     {
-        public PatientHomeView()
+        public DoctorsView2OnLoad()
         {
             InitializeComponent();
         }
